@@ -23,13 +23,6 @@ There are some common component attributes notated below. Specific components ma
 The following Tabler UI components are available in this package.
 
 ### Form Text component
-`<x-form-text />`
-
-
-
-
-
-### Form Address component
 `<x-form-text name="example-text-input" label="Text" placeholder="Input placeholder"/>`
 
 ![form-text](/screenshots/form-text.png)
