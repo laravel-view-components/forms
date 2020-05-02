@@ -1,0 +1,22 @@
+{
+  "name": "laravel-view-components/form",
+  "description": "Laravel 7.x form view components",
+  "keywords": ["laravel", "view components", "form"],
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "^7.0",
+    "danswiser/tabler-preset": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaravelViewComponents\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelViewComponents\\FormServiceProvider"
+      ]
+    }
+  }
+}
