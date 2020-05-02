@@ -13,6 +13,12 @@ class Toggle extends Component
      * @var string
      */
     public $id;
+    /**
+     * The input name.
+     *
+     * @var string
+     */
+    public $name;
 
     /**
      * Create a new component instance.
