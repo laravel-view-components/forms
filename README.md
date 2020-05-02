@@ -8,7 +8,7 @@ The goal of this package is to provide a list of easy to use form inputs as View
 ## Install
 
 1. Install a fresh copy of [Laravel](https://laravel.com/docs/7.x/installation) 7.x or above.
-2. Install this package via `composer require laravel-view-components/form`. Laravel 7.x will automatically discover this package. No need to register the service provider.
+2. Install this package via `composer require laravel-view-components/forms`. Laravel 7.x will automatically discover this package. No need to register the service provider.
 3. Install the Tabler UI Preset.
 4. Run `npm install && npm run dev` to build the frontend
 
