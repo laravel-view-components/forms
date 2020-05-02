@@ -12,6 +12,9 @@
       "LaravelViewComponents\\": "src/"
     }
   },
+  "suggest": {
+    "laravel-view-components/notifications": "Additional UI Elements"
+  },
   "extra": {
     "laravel": {
       "providers": [
