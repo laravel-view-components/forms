@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
     "laravel/framework": "^7.0",
-    "danswiser/tabler-preset": "dev-master"
+    "laravel-frontend-presets/tabler": "dev-master"
   },
   "autoload": {
     "psr-4": {
