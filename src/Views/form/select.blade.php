@@ -1,7 +1,7 @@
 <div {{ $attributes->merge(['class' => 'form-group']) }}>
   <label class="form-label">{{ $label }}</label>
   <select name={{$name}} id={{$id}} class="form-select">
-    <option>Click to select...</option>
+    <option>{{ $placeholder }}</option>
   @foreach($options as $value=>$option)
     <option value="{{ $value }}">{{ $option }}</option>
   @endforeach

@@ -28,6 +28,12 @@ class Select extends Component
     /**
      * The selectable options.
      *
+     * @var string
+     */
+    public $placeholder;
+    /**
+     * The selectable options.
+     *
      * @var array
      */
     public $options;
@@ -37,15 +43,17 @@ class Select extends Component
      *
      * @param  string   $name
      * @param  string   $label
+     * @param  string   $placeholder
      * @param  array    $options
      *
      * @return void
      */
-    public function __construct($name = "select", $label = "Select Input", array $options = [])
+    public function __construct(string $name = "select", string $label = "Select Input", string $placeholder = "Select Option...", array $options = [])
     {
         $this->id = 'input-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
         $this->name = $name;
         $this->label = $label;
+        $this->placeholder = $placeholder;
         $this->options = $options;
     }
 
