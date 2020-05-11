@@ -30,6 +30,7 @@ class FormServiceProvider extends LaravelServiceProvider
         Components\Form\Search::class,
         Components\Form\Select::class,
         Components\Form\Text::class,
+        Components\Form\Textarea::class,
         Components\Form\Toggle::class,
         Components\Form\Select\Images::class,
         Components\Form\Select\Tags::class,
