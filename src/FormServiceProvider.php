@@ -33,6 +33,8 @@ class FormServiceProvider extends LaravelServiceProvider
         Components\Form\Textarea::class,
         Components\Form\Toggle::class,
         Components\Form\Wrapper::class,
+    ]);
+    $this->loadViewComponentsAs('form-select', [
         Components\Form\Select\Images::class,
         Components\Form\Select\Tags::class,
         Components\Form\Select\Users::class,
