@@ -26,22 +26,36 @@ class Tags extends Component
      * @var string
      */
     public $label;
+    /**
+     * The selectable options.
+     *
+     * @var string
+     */
+    public $placeholder;
+    /**
+     * The selectable options.
+     *
+     * @var array
+     */
+    public $options;
 
     /**
      * Create a new component instance.
      *
      * @param  string  $name
      * @param  string  $label
-     * @param  string  $value
      * @param  string  $placeholder
+     * @param  array   $options
      *
      * @return void
      */
-    public function __construct($name = "tags", $label = "Select Tags Input")
+    public function __construct(string $name = "tags", string $label = "Select Tags", string $placeholder = "Select Option...", array $options = [])
     {
-        $this->id = 'input-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
+        $this->id = 'form-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
         $this->name = $name;
         $this->label = $label;
+        $this->placeholder = $placeholder;
+        $this->options = $options;
     }
 
     /**

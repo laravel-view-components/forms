@@ -50,7 +50,7 @@ class Select extends Component
      */
     public function __construct(string $name = "select", string $label = "Select Input", string $placeholder = "Select Option...", array $options = [])
     {
-        $this->id = 'input-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
+        $this->id = 'form-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
         $this->name = $name;
         $this->label = $label;
         $this->placeholder = $placeholder;
