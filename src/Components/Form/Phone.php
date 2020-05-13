@@ -43,7 +43,7 @@ class Phone extends Component
    */
   public function __construct($name = "phone", $label = "Phone Number", $placeholder = '(000) 000-0000')
   {
-      $this->id = 'input-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
+      $this->id = 'form-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
       $this->name = $name;
       $this->label = $label;
       $this->placeholder = $placeholder;

@@ -37,7 +37,7 @@ class Password extends Component
      */
     public function __construct($name = "password", $label = "Password Input", $placeholder = "Enter Password")
     {
-        $this->id = 'input-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
+        $this->id = 'form-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
         $this->name = $name;
         $this->label = $label;
         $this->placeholder = $placeholder;

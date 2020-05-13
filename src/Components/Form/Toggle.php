@@ -30,7 +30,7 @@ class Toggle extends Component
      */
     public function __construct($name = "toggle")
     {
-        $this->id = 'input-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
+        $this->id = 'form-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
         $this->name = $name;
     }
 

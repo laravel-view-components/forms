@@ -43,7 +43,7 @@ class Text extends Component
      */
     public function __construct($name = "text", $label = "Text Input", $placeholder = "Enter Text")
     {
-        $this->id = 'input-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
+        $this->id = 'form-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
         $this->name = $name;
         $this->label = $label;
         $this->placeholder = $placeholder;
