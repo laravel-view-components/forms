@@ -31,6 +31,12 @@ class Textarea extends Component
      * @var string
      */
     public $placeholder;
+    /**
+     * The maximum length of input.
+     *
+     * @var int
+     */
+    public $max;
 
     /**
      * Create a new component instance.
@@ -41,12 +47,13 @@ class Textarea extends Component
      *
      * @return void
      */
-    public function __construct($name = "text", $label = "Text Input", $placeholder = "Enter Text")
+    public function __construct($name = "text", $label = "Text Input", $placeholder = "Enter Text", $max = 200)
     {
         $this->id = 'form-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($name);
         $this->name = $name;
         $this->label = $label;
         $this->placeholder = $placeholder;
+        $this->max = $max;
     }
 
     /**
