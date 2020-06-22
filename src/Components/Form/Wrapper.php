@@ -40,7 +40,7 @@ class Wrapper extends Component
     {
         $this->id = 'form-' . Str::kebab(class_basename(get_class($this))) . '-' . md5($action);
         $this->method = $method;
-        $this->action = Admin::route($action);
+        $this->action = $this->getActionURLFromString($action);
     }
 
     /**
@@ -51,5 +51,20 @@ class Wrapper extends Component
     public function render()
     {
         return view('components::form.wrapper');
+    }
+
+    /**
+     * Return URL action from the provided string
+     *
+     * @param  string  $action
+     *
+     * @return string
+     */
+    private function getActionURLFromString($action) {
+      if (filter_var($action, FILTER_VALIDATE_URL)) {
+        return $action;
+      } else {
+        return route($action);
+      }
     }
 }
